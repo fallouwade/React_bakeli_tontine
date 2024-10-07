@@ -61,7 +61,7 @@ class App extends React.Component {
   handleSubmit= (event)=> {
     event.preventDefault(); // Empêche le rechargement de la page
     if(this.validateform()){
-         window.location.href= "/public/connexion.html"
+        alert("inscription valider")
 
 
               
@@ -142,7 +142,7 @@ class App extends React.Component {
                     </div>
                      <div className="text-center col-9 mt-3">
                         <button className="btn btn-success col-6"  id="btn_inscri" type="submit">S'inscrire</button>
-                        <p>Vous avez déja un compte,<a href="connexion.html" className="text-decoration-none text-black fw-medium">Connectez-vous!</a> </p>
+                        <p>Vous avez déja un compte,<a href="/public/connexion.html" className="text-decoration-none text-black fw-medium">Connectez-vous!</a> </p>
                     </div>
                 </form>
                
