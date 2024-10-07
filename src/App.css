@@ -1,0 +1,42 @@
+
+
+#body{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #093545 !important; */
+}
+
+#page-principal{
+    height: 100vh !important;
+    width: 100% !important;
+}
+
+#bg-principal{
+    background-color: #093545;
+    height: 100% !important;
+    width: 35%;
+}
+
+#div-img{
+    margin-top: 34%;
+}
+
+#page-connexion{
+    width: 65%;
+     margin-top: 9% !important;
+}
+
+.form-control{
+    width: 275px !important;
+    background-color: #093545 !important;
+}
+
+.btn{
+    background-color:  #20DF7F !important;
+    width: 265px !important;
+}
+
+input::placeholder {
+    color: white !important;
+  }
+  
