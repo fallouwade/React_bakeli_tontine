@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  /* Styles pour les écrans de 768px ou moins */
+  #aside {
+    width: 0% !important;
+  }
+  #dashboard{
+    margin-left: 0%  !important;
+  }
+}

@@ -1,13 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import React from 'react';
 
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import image from '/image/img-connexion.png'
+import './App.css'
 
 
-class App extends React.Component {
+class Connexion extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,10 +37,10 @@ validateform = ()=>{
   handleSubmit= (event)=> {
     event.preventDefault(); // Empêche le rechargement de la page
     if(this.validateform()){
-         window.location.href= "/public/inscription.html"
+         window.location.href= "/accueil"
               
     }
-    console.log("wade"+ this.validateform())
+   
   }     
 
 
@@ -62,7 +60,7 @@ validateform = ()=>{
             </h2>
             <div   className=" d-flex justify-content-center ">
               
-                <div className="w-50 ">
+                <div className="w-50 " id="input">
                     <h3 className="text-center my-3 fw-semibold ">Connectez-vous</h3>
                     <form onSubmit={this.handleSubmit} className="row g-1 gy-4 needs-validation d-flex justify-content-center  flex-colum  align-items-center  w-100"  >
                         <div className="col-md-12  align-items-center d-flex flex-column justify-content-center">
@@ -79,12 +77,12 @@ validateform = ()=>{
                             </span>
                           </div>
                         <div className="col-md-12 align-items-center  d-flex justify-content-center align-items-center">
-                          <button className="btn fw-semibold" type="submit" >Connexion</button>
+                          <button className="btn fw-semibold" type="submit" id="btn" >Connexion</button>
                         </div>
                         <div className="col-md-12 align-items-center  d-flex justify-content-center align-items-center">
                           <span  >
                             Vous n'avez pas de compte, 
-                            <a href="" className="fw-semibold text-decoration-none " style={{ color: '#093545'}}>inscrivez-vous!</a>
+                            <a href="/" className="fw-semibold text-decoration-none " style={{ color: '#093545'}}>inscrivez-vous!</a>
                         </span>
                         </div>
                       </form>
@@ -101,13 +99,4 @@ validateform = ()=>{
 
 
 
-
-
-
-
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+export default Connexion

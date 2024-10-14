@@ -1,62 +1,68 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import image5 from '/image/Ellipse 9.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import image5 from '/image/Ellipse 9.png';
 
-class Nav extends React.Component{
-  constructor(props){
-    super(props)
-    this.state= {
-      nav:[]
-    }
-  }
-  render(){
-  	const style= {
-      padding:{ 
-      	paddingLeft:'15%'},
-    
+class Nav extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            nav: []
+        };
     }
 
-    return(
+    render() {
+        const style = {
+            padding: { 
+                paddingLeft: '15%' 
+            },
+            position: {
+                position: 'fixed',
+                top: '0',
+                left:'0',
+                start:'0',
+                clear: 'both',
+                height: '90px',
+                zIndex: 10 // Assurez-vous d'ajouter zIndex ici
+            }
+        };
 
-        
-          <div className="bg-white white p-3 shadow-lg  d-flex justify-content-between align-items-center">
-                <div classNameName="" style={style.padding}>
-                    <span className="">{this.props.name}</span>
+        return (
+            <div className="container-fluid">
+            <div style={style.position} className="bg-white p-3 shadow-lg d-flex justify-content-between align-items-center col-12">
+                <div style={style.padding}>
+                    <span className="ms-5 ps-5 fw-bold fs-3 ">{this.props.name}</span>
                 </div>
                 <div className="d-flex align-items-center">
                     <div className="me-3"><i className="bi bi-bell"></i></div>
                     <div className="d-flex">
                         <div>
-                             <img src={image5} alt="Admin" />
+                            <img src={image5} alt="Admin" />
                         </div>
                         <div>
-                            <span className="fw-semibold">Ndiaga Sall</span> <br/>
-                            <span className="text-secondary">Adminitrator</span>
+                            <span className="fw-semibold">Ndiaga Sall</span><br />
+                            <span className="text-secondary">Administrateur</span>
                         </div>
                     </div>
-
-                    <div>
-                        <div className="btn-group ">
-                            <button type="button"  className="border  border-0 dropdown-toggle bg-white text-dark" data-bs-toggle="dropdown" data-bs-display="stati" aria-expanded="false">
-                     
-                            </button>
-                            <ul className=" dropdown-menu   dropdown-menu-lg-end ">
-                                
-                              <li><button className="dropdown-item text-secondary text-center" type="button">Profil</button></li>
-                              <li><button className="dropdown-item text-secondary text-center" type="button">Mot de Passe</button></li>
-                              <li><button className="dropdown-item text-secondary text-center" type="button">Déconnexion</button></li>
-                            </ul>
-                          </div>
+                    <div className="dropdown">
+                        <button 
+                            className=" border-0 btn btn-white dropdown-toggle" 
+                            type="button" 
+                            id="dropdownMenuButton" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false">
+                           
+                        </button>
+                        <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li><button className="dropdown-item text-secondary text-center" type="button">Profil</button></li>
+                            <li><button className="dropdown-item text-secondary text-center" type="button">Mot de Passe</button></li>
+                            <li><button className="dropdown-item text-secondary text-center" type="button">Déconnexion</button></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-      
-
-      )
-
-  }
-
+            </div>
+        );
+    }
 }
 
-export default Nav
-
+export default Nav;

@@ -26,17 +26,17 @@
      margin-top: 9% !important;
 }
 
-.form-control{
+#input .form-control{
     width: 275px !important;
     background-color: #093545 !important;
 }
 
-.btn{
+#btn{
     background-color:  #20DF7F !important;
     width: 265px !important;
 }
 
-input::placeholder {
+#input input::placeholder {
     color: white !important;
   }
   

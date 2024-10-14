@@ -1,0 +1,73 @@
+{
+  "utilisateurs": [
+    {
+      "nomUtilisateur": "AliceDupont",
+      "dateInscription": "2023-01-15",
+      "montantInscription": 500,
+      "paiementsMensuels": [
+        {
+          "montantPaye": 100,
+          "datePaiement": "2023-02-01"
+        },
+        {
+          "montantPaye": 100,
+          "datePaiement": "2023-03-01"
+        },
+        {
+          "montantPaye": 100,
+          "datePaiement": "2023-04-01"
+        }
+      ],
+      "montantRestant": 200
+    },
+    {
+      "nomUtilisateur": "Bob Martin",
+      "dateInscription": "2023-03-10",
+      "montantInscription": 300,
+      "paiementsMensuels": [
+        {
+          "montantPaye": 50,
+          "datePaiement": "2023-04-10"
+        },
+        {
+          "montantPaye": 50,
+          "datePaiement": "2023-05-10"
+        }
+      ],
+      "montantRestant": 200
+    },
+     {
+      "nomUtilisateur": "jeau mendy",
+      "dateInscription": "2023-03-10",
+      "montantInscription": 700,
+      "paiementsMensuels": [
+        {
+          "montantPaye": 100,
+          "datePaiement": "2023-04-10"
+        },
+        {
+          "montantPaye": 100,
+          "datePaiement": "2023-05-10"
+        }
+      ],
+      "montantRestant": 500
+    },
+    {
+      "nomUtilisateur": "boss coly",
+      "dateInscription": "2023-03-10",
+      "montantInscription": 600,
+      "paiementsMensuels": [
+        {
+          "montantPaye": 300,
+          "datePaiement": "2023-04-10"
+        },
+        {
+          "montantPaye": 300,
+          "datePaiement": "2023-05-10"
+        }
+      ],
+      "montantRestant": 0
+    }
+
+  ]
+}
