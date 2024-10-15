@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
-import image from '/image/Savings.png';
+import '../style/index.css';
+import image from '../../image/Savings.png';
 
 class Modal extends React.Component {
     constructor(props) {

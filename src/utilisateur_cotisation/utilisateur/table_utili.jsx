@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Modal from './voir.jsx';
+import Modal from '../voir.jsx';
 
 class Table1 extends React.Component {
   constructor(props) {

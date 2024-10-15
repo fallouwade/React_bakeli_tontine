@@ -2,7 +2,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import image from '/image/img-connexion.png'
-import './App.css'
+import '../style/App.css'
+import { Link } from 'react-router-dom';
 
 
 class Connexion extends React.Component {
@@ -82,7 +83,7 @@ validateform = ()=>{
                         <div className="col-md-12 align-items-center  d-flex justify-content-center align-items-center">
                           <span  >
                             Vous n'avez pas de compte, 
-                            <a href="/" className="fw-semibold text-decoration-none " style={{ color: '#093545'}}>inscrivez-vous!</a>
+                            <Link to="/" className="fw-semibold text-decoration-none " style={{ color: '#093545'}}>inscrivez-vous!</Link>
                         </span>
                         </div>
                       </form>

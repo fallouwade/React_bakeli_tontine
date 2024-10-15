@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './index.css';
+import '../../style/index.css';
 import image from '/image/Savings.png'
-import Modal from './voir.jsx';
+import Modal from '../voir.jsx';
 
 
 class Table extends React.Component{

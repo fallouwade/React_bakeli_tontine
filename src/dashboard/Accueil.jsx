@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Aside from './aside_nav.jsx'
-import Nav from './nav.jsx'
-import './index.css';
-import Charts from './chart.jsx'
+import Aside from '../aside_nav/aside_nav.jsx'
+import Nav from '../aside_nav/nav.jsx'
+import '../style/index.css';
+// import Charts from './chart.jsx'
 import Card1 from './card1.jsx'
 import Table1 from './dashbord_table.jsx'
 
@@ -49,7 +49,7 @@ class Accueil extends React.Component{
                 <Card1 />
               </div>
               <div>
-                <Charts />
+                {/*<Charts />*/}
               </div>
               <div>
                 <Table1 />

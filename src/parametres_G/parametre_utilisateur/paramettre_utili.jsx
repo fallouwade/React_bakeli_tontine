@@ -1,13 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Aside from './aside_nav.jsx'
-import Nav from './nav.jsx'
-import './index.css'
-import Profil_generau from './profil_generaux.jsx'
+import Aside from '../../aside_nav/aside_nav.jsx'
+import Nav from '../../aside_nav/nav.jsx'
+import '../../style/index.css'
+import Utilisateur_p from './paramettre_util.jsx'
 
 
 
-class Generaux extends React.Component{
+class Paramettre_utili extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -24,8 +24,9 @@ class Generaux extends React.Component{
         zIndex:'0'
       },
       marge:{
-        marginLeft:'24vw',
-        marginTop: '10%'
+        marginLeft:'21vw',
+        marginTop: '13vh',
+        width: '77.8vw'
       }
 
     }
@@ -42,11 +43,12 @@ class Generaux extends React.Component{
 
             </div>
             <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
-          
-
-            <div>
-              <Profil_generau />
-            </div>
+              <div>
+                <div>
+                  <h1 className="bg-body-secondary p-3">Utilisateurs</h1>
+                </div>
+                <Utilisateur_p />
+              </div>
             </div>
 
           </section>
@@ -57,4 +59,4 @@ class Generaux extends React.Component{
 
 
 
-export default Generaux
+export default Paramettre_utili

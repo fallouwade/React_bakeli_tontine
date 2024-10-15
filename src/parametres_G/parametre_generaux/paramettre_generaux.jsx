@@ -1,14 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Aside from './aside_nav.jsx'
-import Nav from './nav.jsx'
-import './index.css'
-import Card2 from './card2.jsx'
-import Ajouter from './modal_ajouter.jsx';
-import Table1 from './table_utili.jsx'
+import Aside from '../../aside_nav/aside_nav.jsx'
+import Nav from '../../aside_nav/nav.jsx'
+import '../../style/index.css'
+import Profil_generau from './profil_generaux.jsx'
 
 
-class Utilisateur extends React.Component{
+
+class Generaux extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -43,15 +42,11 @@ class Utilisateur extends React.Component{
 
             </div>
             <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
-              <div>
-                <Card2 />
-              </div>
-              <div>
-                <Ajouter />
-              </div>
-              <div>
-                <Table1 />
-              </div>
+          
+
+            <div>
+              <Profil_generau />
+            </div>
             </div>
 
           </section>
@@ -62,4 +57,4 @@ class Utilisateur extends React.Component{
 
 
 
-export default Utilisateur
+export default Generaux

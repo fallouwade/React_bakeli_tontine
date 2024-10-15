@@ -1,8 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './index.css';
-import image from '/image/Savings.png'
-import Profi from './profi.jsx'
+import '../../style/index.css';
+import Profi from '../personne.jsx'
 
 
 class Profil_generau extends React.Component{

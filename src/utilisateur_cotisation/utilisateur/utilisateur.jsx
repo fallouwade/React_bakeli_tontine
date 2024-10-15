@@ -1,14 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Aside from './aside_nav.jsx'
-import Nav from './nav.jsx'
-import './index.css'
-import Card3 from './card3.jsx'
-import Table from './table_cotisation.jsx'
-import Modal from './modal_cotisation.jsx'
+import Aside from '../../aside_nav/aside_nav.jsx'
+import Nav from '../../aside_nav/nav.jsx'
+import '../../style/index.css'
+import Card2 from './card2.jsx'
+import Ajouter from './modal_ajouter.jsx';
+import Table1 from './table_utili.jsx'
 
 
-class Cotisation extends React.Component{
+class Utilisateur extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -44,17 +44,15 @@ class Cotisation extends React.Component{
             </div>
             <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
               <div>
-                <Modal/>
+                <Card2 />
               </div>
-               <div> 
-                 <Card3 />
-               </div>
-               <div>
-                 <Table />
+              <div>
+                <Ajouter />
               </div>
-
-             </div>
-            
+              <div>
+                <Table1 />
+              </div>
+            </div>
 
           </section>
       )
@@ -64,4 +62,4 @@ class Cotisation extends React.Component{
 
 
 
-export default Cotisation
+export default Utilisateur

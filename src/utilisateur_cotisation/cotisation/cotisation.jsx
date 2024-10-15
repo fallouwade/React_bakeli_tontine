@@ -1,13 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Aside from './aside_nav.jsx'
-import Nav from './nav.jsx'
-import './index.css'
-import Profil from './profil.jsx'
+import Aside from '../../aside_nav/aside_nav.jsx'
+import Nav from '../../aside_nav/nav.jsx'
+import '../../style/index.css'
+import Card3 from './card3.jsx'
+import Table from './table_cotisation.jsx'
+import Modal from './modal_cotisation.jsx'
 
 
-
-class Paramettre extends React.Component{
+class Cotisation extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -42,11 +43,18 @@ class Paramettre extends React.Component{
 
             </div>
             <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
-            <div>
-                <Profil />
-            </div>
-             
-            </div>
+              <div>
+                <Modal/>
+              </div>
+               <div> 
+                 <Card3 />
+               </div>
+               <div>
+                 <Table />
+              </div>
+
+             </div>
+            
 
           </section>
       )
@@ -56,4 +64,4 @@ class Paramettre extends React.Component{
 
 
 
-export default Paramettre
+export default Cotisation

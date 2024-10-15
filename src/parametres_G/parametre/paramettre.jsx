@@ -1,13 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Aside from './aside_nav.jsx'
-import Nav from './nav.jsx'
-import './index.css'
-import Utilisateur_p from './paramettre_util.jsx'
+import Aside from '../../aside_nav/aside_nav.jsx'
+import Nav from '../../aside_nav/nav.jsx'
+import '../../style//index.css'
+import Profil from './profil.jsx'
 
 
 
-class Paramettre_utili extends React.Component{
+class Paramettre extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -24,9 +24,8 @@ class Paramettre_utili extends React.Component{
         zIndex:'0'
       },
       marge:{
-        marginLeft:'21vw',
-        marginTop: '13vh',
-        width: '77.8vw'
+        marginLeft:'24vw',
+        marginTop: '10%'
       }
 
     }
@@ -43,12 +42,10 @@ class Paramettre_utili extends React.Component{
 
             </div>
             <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
-              <div>
-                <div>
-                  <h1 className="bg-body-secondary p-3">Utilisateurs</h1>
-                </div>
-                <Utilisateur_p />
-              </div>
+            <div>
+                <Profil />
+            </div>
+             
             </div>
 
           </section>
@@ -59,4 +56,4 @@ class Paramettre_utili extends React.Component{
 
 
 
-export default Paramettre_utili
+export default Paramettre

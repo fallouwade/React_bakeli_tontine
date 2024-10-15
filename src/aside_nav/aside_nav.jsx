@@ -1,12 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import image from '/image/img-connexion.png';
-import image1 from '/image/Savings.png';
-import image2 from '/image/category.png';
-import image3 from '/image/user.png';
-import image4 from '/image/Vector.png';
-import image6 from '/image/healthicons_money-bag-outline.png';
-import './index.css';
+import image from '../../image/img-connexion.png';
+import image1 from '../../image/Savings.png';
+import image2 from '../../image/category.png';
+import image3 from '../../image/user.png';
+import image4 from '../../image/Vector.png';
+import image6 from '../../image/healthicons_money-bag-outline.png';
+import '../style/index.css';
 
 class Aside extends React.Component {
   constructor(props) {

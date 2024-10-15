@@ -146,7 +146,8 @@ class Inscription extends React.Component {
                     </div>
                      <div className="text-center col-9 mt-3">
                         <button className="btn btn-success col-6"  type="submit">S'inscrire</button>
-                        <p className="pt-3">Vous avez déja un compte,<a href="/connexion" className="text-decoration-none text-black fw-medium">Connectez-vous!</a> </p>
+                        <p className="pt-3">Vous avez déja un compte,
+                        <Link to="/connexion" className="text-decoration-none text-black fw-medium">Connectez-vous!</Link> </p>
 
                     </div>
 

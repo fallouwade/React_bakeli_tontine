@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import image5 from '/image/Ellipse 9.png';
+import image5 from '../../image/Ellipse 9.png';
 
 class Nav extends React.Component {
     constructor(props) {
@@ -30,7 +30,7 @@ class Nav extends React.Component {
             <div className="container-fluid">
             <div style={style.position} className="bg-white p-3 shadow-lg d-flex justify-content-between align-items-center col-12">
                 <div style={style.padding}>
-                    <span className="ms-5 ps-5 fw-bold fs-3 ">{this.props.name}</span>
+                    <span className="ms-md-5 ms-1 ps-md-5 ps-1  ">{this.props.name}</span>
                 </div>
                 <div className="d-flex align-items-center">
                     <div className="me-3"><i className="bi bi-bell"></i></div>
