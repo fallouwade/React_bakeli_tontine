@@ -14,21 +14,19 @@ class Card1 extends React.Component{
 
   render(){
     const style={
-      card:{
-        width: '17rem'
-      },
+     
       card1:{
-        width: '15rem'
+        width: '16.5rem'
       },
       card2:{
-        width: '18rem'
+        width: '15rem'
       }
     }
     return(
-           <div className="container  px-5  my-3">
+           <div className="container  px-5  mt-md-5 mt-0 pt-md-5 pt-2 ">
                 <div className="row d-flex justify-content-between  gy-3   ">
                     <div className="col-12 col-md-6 col-lg-3  d-flex justify-content-center">
-                        <div className="card" style={style.card}>
+                        <div className="card shadow bg-white" style={style.card1}>
                             <div className="card-body ">
                               <h5 className="card-title"></h5>
                               <h6 className="card-subtitle mb-2 text-body-secondary">Juin</h6>
@@ -40,7 +38,7 @@ class Card1 extends React.Component{
                           </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                        <div className="card " style={style.card1}>
+                        <div className="card shadow bg-white" style={style.card1}>
                             <div className="card-body">
                               <h5 className="card-title"></h5>
                               <h6 className="card-subtitle mb-2 text-body-secondary">Juin</h6>
@@ -52,7 +50,7 @@ class Card1 extends React.Component{
                           </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-5 d-flex justify-content-center">
-                        <div className="card w-100 d-flex justify-content-center align-items-center flex-row px-2 " style={style.card2}>
+                        <div className="card w-100 d-flex justify-content-center align-items-center flex-row px-2 shadow bg-white " style={style.card2}>
                             <div><img src={image} /></div>
                             <div className="card-body">
                               <h5 className="card-title"></h5>

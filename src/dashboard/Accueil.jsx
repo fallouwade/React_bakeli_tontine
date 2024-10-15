@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Aside from '../aside_nav/aside_nav.jsx'
 import Nav from '../aside_nav/nav.jsx'
-import '../style/index.css';
+import '../style/App.css';
 // import Charts from './chart.jsx'
 import Card1 from './card1.jsx'
 import Table1 from './dashbord_table.jsx'
@@ -35,7 +35,7 @@ class Accueil extends React.Component{
     return(
 
           <section >
-          
+              <div className="container-fluid">
             <div className="z-3" >
               <Aside/>
             </div>
@@ -43,8 +43,9 @@ class Accueil extends React.Component{
               <Nav name="Admin Dashboard"/>
 
             </div>
+            </div>
            <section className="container-fluid   ">
-             <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
+             <div className="col-sm-9 col-md-9 col-12   border border-primary"  id="dashboard">
               <div>
                 <Card1 />
               </div>

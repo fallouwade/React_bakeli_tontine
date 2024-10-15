@@ -29,15 +29,7 @@ class Table1 extends React.Component{
 
   render(){
     const style={
-      card:{
-        width: '15rem'
-      },
-      card1:{
-        width: '15rem'
-      },
-      card2:{
-        width: '18rem'
-      },
+     
       taille:{
         width:'100px',
         height: '10px'
@@ -45,7 +37,7 @@ class Table1 extends React.Component{
     }
     const {table}= this.state
     return(
-          <div className="container row px-5  my-4">
+          <div className="container-fluid  row px-md-5 px-0 my-4">
             <div className="col-md-7 col-12">
                 <h4>Juin</h4>
                <table className="table ms-1 shadow-sm col-12 rounded-5" id="table">

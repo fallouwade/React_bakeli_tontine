@@ -47,10 +47,10 @@ class Table1 extends React.Component {
 
 
     return (
-      <div className="container row px-5 my-4">
-        <div className="col-12 ms-4">
+      <div className="container row px-md-5 px-0 my-4">
+        <div className="col-12 ms-md-4 ms-0">
           <h4>Juin</h4>
-          <table className="table ms-1 shadow-sm col-12" id="table">
+          <table className="table ms-1 shadow-sm " id="table">
             <thead className="rounded-1">
               <tr className="table-success">
                 <th scope="col">Membres</th>

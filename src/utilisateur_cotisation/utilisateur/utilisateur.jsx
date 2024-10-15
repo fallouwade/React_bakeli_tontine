@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Aside from '../../aside_nav/aside_nav.jsx'
 import Nav from '../../aside_nav/nav.jsx'
-import '../../style/index.css'
+import '../../style/App.css'
 import Card2 from './card2.jsx'
 import Ajouter from './modal_ajouter.jsx';
 import Table1 from './table_utili.jsx'
@@ -42,7 +42,7 @@ class Utilisateur extends React.Component{
               <Nav name="Admin Dashboard"/>
 
             </div>
-            <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
+            <div className=" col-sm-9 col-md-9 col-12 container-fluid border border-primary"  id="dashboard">
               <div>
                 <Card2 />
               </div>

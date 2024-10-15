@@ -75,76 +75,76 @@ class Inscription extends React.Component {
   render() {
     return (
        
-        <div  className="d-flex justify-content-between ">      
+        <div id="page-principal" className="d-flex flex-md-row flex-column justify-content-between  ">      
          
-           <section  className="rounded-end-5 bg-success  col-4">
-                <div  className=" d-flex justify-content-center mt-5 pt-5 " >
-                    < img src={image} alt="img" />
+           <section  id="bg-principal" className="rounded-end-5 col-md-4 col-12">
+                <div id="div-img"  className=" d-flex justify-content-center  pt-3 " >
+                    < img src={image} alt="img" className="img-fluid "/>
                 </div>
 
             </section>       
-            <div className=" col-7 mt-3 ">
-                <div className="col-10 text-center ">
-                    <h3 className="text-success fst-italic  mb-4" >Inscription</h3>
+            <div className=" col-md-7 col-12 mt-md-5 mt-0 pt-md-5 pt-2 ">
+                <div className="col-10 text-center ms-md-0 ms-4">
+                    <h3 className="text-success fst-italic   mb-4" >Inscription</h3>
                 </div>
-               <form onSubmit={this.handleSubmit} id="form">
+               <form onSubmit={this.handleSubmit} id="form1" className="12">
                     <div className="d-flex container gap-5">
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-md-4 col-5 ">
                              <label   className="form-label fw-medium">Nom</label>
                              <input name="nom" type="text" className="form-control" required onChange={this.handleChange}   />
                               <small style={{color: "red"}}>{this.state.message_derreur.nom}</small>
                         </div>
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-md-4 col-5 ">
                              <label  className="form-label fw-medium">Prénom</label>
                              <input name="prenom" type="text" className="form-control " onChange={this.handleChange} required  />
                               <small id="small" style={{color: "red"}}>{this.state.message_derreur.prenom}</small>
                         </div>
                     </div>
                      <div className="d-flex container gap-5">
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-md-4 col-5 ">
                              <label  className="form-label fw-medium">Date de naissance</label>
                              <input name="naissance" type="date" className="form-control " required  />
                         </div>
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-md-4 col-5 ">
                              <label  className="form-label fw-medium">Profession</label>
                              <input name="profession" type="text" className="form-control " required  />
                         </div>
                     </div>
                      <div className="d-flex container gap-5">
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-md-4 col-5 ">
                              <label  className="form-label fw-medium">Définir mot de passe</label>
                              <input name="password" type="password" className="form-control " onChange={this.handleChange} required  / >
                               <small id="small" style={{color: "red"}}>{this.state.message_derreur.password}</small>
                         </div>
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-md-4 col-5 ">
                              <label  className="form-label fw-medium">Confirmer votre mot de passe</label>
                              <input name="confirme_password" type="password" className="form-control " onChange={this.handleChange} required />
                              <small id="incorect_passsword" style={{color: "red"}}>{this.state.message_derreur.confirme_password}</small>
                         </div>
                     </div>
                      <div className="d-flex container gap-5">
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-md-4 col-5 ">
                              <label  className="form-label fw-medium">E-mail</label>
                              <input name="email" type="email" className="form-control " onChange={this.handleChange} required / >
                              <small style={{color: "red"}} >{this.state.message_derreur.email}</small>
                         </div>
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-md-4 col-5 ">
                              <label  className="form-label fw-medium">Téléphone</label>
                              <input name="telephone" type="number" className="form-control " required onChange={this.handleChange} />
                              <small style={{color: "red"}}  >{this.state.message_derreur.telephone}</small>
                         </div>
                     </div>
                      <div className="d-flex container gap-5">
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-md-4 col-5 ">
                              <label  className="form-label fw-medium">Adresse</label>
                              <input name="adresse" type="text" className="form-control " required  />
                         </div>
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-md-4 col-5 ">
                              <label  className="form-label fw-medium">Organisation</label>
                              <input name="org" type="text" className="form-control " required  />
                         </div>
                     </div>
-                     <div className="text-center col-9 mt-3">
+                     <div className="text-center col-md-9 col-12 mt-3">
                         <button className="btn btn-success col-6"  type="submit">S'inscrire</button>
                         <p className="pt-3">Vous avez déja un compte,
                         <Link to="/connexion" className="text-decoration-none text-black fw-medium">Connectez-vous!</Link> </p>

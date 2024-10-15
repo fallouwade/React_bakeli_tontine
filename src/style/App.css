@@ -14,7 +14,7 @@
 #bg-principal{
     background-color: #093545;
     height: 100% !important;
-    width: 35%;
+   
 }
 
 #div-img{
@@ -39,4 +39,33 @@
 #input input::placeholder {
     color: white !important;
   }
+
+#dashboard{
+    margin-left: 24vw !important;
+    margin-top: 2% !important;
+   border: 1px solid yellow;
+}
+
+
+@media (max-width: 768px) {
+  /* Styles pour les écrans de 768px ou moins */
+  #aside {
+    width: 0% !important;
+  }
+  #dashboard{
+    margin-left: 0%  !important;
+     margin-top: 2% !important;
+  }
+}
+@media (max-width: 668px) {
+  /* Styles pour les écrans de 768px ou moins */
+  #aside {
+    width: 0% !important;
+  }
+  #dashboard{
+    margin-left: 0%  !important;
+     margin-top: 25% !important;
+  }
+}
+
   

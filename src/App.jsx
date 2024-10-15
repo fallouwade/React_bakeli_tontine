@@ -8,6 +8,8 @@ import Cotisation from './utilisateur_cotisation/cotisation/cotisation.jsx'
 import Paramettre from './parametres_G/parametre/paramettre.jsx'
 import Generaux from './parametres_G/parametre_generaux/paramettre_generaux.jsx'
 import Paramettre_utili from './parametres_G/parametre_utilisateur/paramettre_utili.jsx'
+import './style/App.css';
+import './style/index.css';
 // import Archives from './archive_bloque/archives.jsx'
 
 
