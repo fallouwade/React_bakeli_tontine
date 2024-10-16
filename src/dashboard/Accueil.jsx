@@ -18,20 +18,7 @@ class Accueil extends React.Component{
   }
 
   render(){
-    const zindex={
-      index1:{
-        zIndex:1000
-      },
-      index2:{
-        zIndex:'0'
-      },
-      marge:{
-        marginLeft:'24vw',
-        marginTop: '10%'
-      }
-
-    }
-    
+   
     return(
 
           <section >
@@ -45,7 +32,7 @@ class Accueil extends React.Component{
             </div>
             </div>
            <section className="container-fluid   ">
-             <div className="col-sm-9 col-md-9 col-12   border border-primary"  id="dashboard">
+             <div className=" content"   id="dashboard">
               <div>
                 <Card1 />
               </div>

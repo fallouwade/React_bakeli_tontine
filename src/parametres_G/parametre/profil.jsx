@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-
-
+import '../../style/index.css';
 import Profi from '../personne.jsx'
 
 
@@ -14,24 +13,10 @@ class Profil extends React.Component{
   }
 
   render(){
-    const style={
-      card:{
-       lineHeight: '1'
-      },
-      card1:{
-       height:'5px' 
-      },
-      card2:{
-        width: "20%",
-       
-      },
-      taille:{
-        height: '14vh'
-      }
-    }
+   
     return(
           <div classNameName="container-fluid  px-md-5 px-0  my-3">
-               <div id="pageAcceuiParametre"  className="section2  bg-light" >
+               <div   className=" bg-light" >
                 <h1>Parametre Generaux 1</h1>
                 <div className="container-fluid mt-3 bg-white p-3">
                   <div className="row">

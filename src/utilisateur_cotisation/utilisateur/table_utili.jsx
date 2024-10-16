@@ -40,18 +40,18 @@ class Table1 extends React.Component {
     const { table, isModalOpen, currentUser } = this.state;
     const style={
     taille:{
-        width:'100px',
+        width:'70%',
         height: '10px'
       }
     }
 
 
     return (
-      <div className="container row px-md-5 px-0 my-4">
-        <div className="col-12 ms-md-4 ms-0">
-          <h4>Juin</h4>
-          <table className="table ms-1 shadow-sm " id="table">
-            <thead className="rounded-1">
+       <div className="container-fluid  row px-sm-0 px-md-0 px-0 ">
+            <div className="ms-md-3 ms-3">
+                <h4>Juin</h4>
+               <table className="table shadow-sm col-12 rounded-5" id="table1">
+                    <thead className="rounded-1">
               <tr className="table-success">
                 <th scope="col">Membres</th>
                 <th scope="col">Date début</th>
@@ -81,10 +81,10 @@ class Table1 extends React.Component {
                       <button className="p-0 border-0 bg-white m-0" onClick={() => this.openModal(index)}>
                         <i className="bi bi-eye"></i>
                       </button>
-                      <button type="button" className="border-0 m-0 p-1 bg-white">
+                      <button type="button" className="border-0 m-0 p-0  bg-white">
                         <i className="bi bi-archive"></i>
                       </button>
-                      <button type="button" className="border-0 m-0 p-1 bg-white">
+                      <button type="button" className="border-0 m-0 p-0 bg-white">
                         <i className="bi bi-ban"></i>
                       </button>
                     </div>
@@ -92,15 +92,16 @@ class Table1 extends React.Component {
                 </tr>
               ))}
             </tbody>
-          </table>
-        </div>
 
-        {/* Instance du Modal en dehors de la boucle */}
-        <Modal isOpen={isModalOpen} onClose={this.closeModal} currentUser={currentUser}>
+                </table>
+            </div>
+            <Modal isOpen={isModalOpen} onClose={this.closeModal} currentUser={currentUser}>
 
          
-        </Modal>
-      </div>
+            </Modal>
+            
+          </div>
+
     );
   }
 }

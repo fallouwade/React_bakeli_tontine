@@ -37,8 +37,8 @@ class Table1 extends React.Component{
     }
     const {table}= this.state
     return(
-          <div className="container-fluid  row px-md-5 px-0 my-4">
-            <div className="col-md-7 col-12">
+          <div className="container-fluid  row px-sm-0 px-md-0 px-0 my-4">
+            <div className="col-md-6 col-12">
                 <h4>Juin</h4>
                <table className="table ms-1 shadow-sm col-12 rounded-5" id="table">
                    <thead className="rounded-1 " >
@@ -66,7 +66,7 @@ class Table1 extends React.Component{
 
                 </table>
             </div>
-            <div className="col-md-5 col-12">
+            <div className="col-md-6 col-12">
                 <h4>Top progression</h4>
                <table className="table ms-1 shadow-sm col-12 " >
                    <thead className="rounded-1 " >

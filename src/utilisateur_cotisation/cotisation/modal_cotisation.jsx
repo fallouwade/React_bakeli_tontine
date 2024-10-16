@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../../style/index.css';
+import '../../style/App.css';
 import image from '/image/Savings.png'
 
 
@@ -13,35 +13,17 @@ class Modal extends React.Component{
   }
 
   render(){
-    const style={
-      card:{
-       lineHeight: '1'
-      },
-      card1:{
-       height:'5px' 
-      },
-      card2:{
-        width: "20%",
-       
-      },
-      taille:{
-        height: '14vh'
-      },
-      modal:{
-        marginLeft:'30%'
-      }
-      
-    }
+    
     return(
-          <div className="container  px-5  my-0">
+          <div className="container    my-0">
             <div className="d-flex justify-content-end ">
            <button type="button" className="btn btn-sm  "  data-bs-toggle="modal" data-bs-target="#exampleModal">
                <i className="bi bi-three-dots text-success ps-2 pe-2 pt-0 pb-0  fs-2 rounded-3 bg-secondary h-25" ></i>
             </button>
             </div>
 
-            <div className="modal fade mx-auto  " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div className="modal-dialog modal-lg text-center container" style={style.modal}>
+            <div className="modal fade mx-md-5 mx-0 cotisation" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div className="modal-dialog modal-lg text-center container" >
                 <div className="modal-content">
                   <div className="modal-header bg-success">
                     <h5 className="modal-title " id="exampleModalLabel">Cotisations terminés</h5>

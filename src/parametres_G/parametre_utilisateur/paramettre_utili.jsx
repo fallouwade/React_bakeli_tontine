@@ -16,25 +16,12 @@ class Paramettre_utili extends React.Component{
   }
 
   render(){
-     const zindex={
-      index1:{
-        zIndex:1000
-      },
-      index2:{
-        zIndex:'0'
-      },
-      marge:{
-        marginLeft:'21vw',
-        marginTop: '13vh',
-        width: '77.8vw'
-      }
-
-    }
+     
     
     return(
 
           <section >
-          
+            <div className="container-fluid">
             <div className="z-3" >
               <Aside/>
             </div>
@@ -42,7 +29,8 @@ class Paramettre_utili extends React.Component{
               <Nav name="Admin Dashboard"/>
 
             </div>
-            <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
+            </div>
+            <div className="content "  id="dashboard">
               <div>
                 <div>
                   <h1 className="bg-body-secondary p-3">Utilisateurs</h1>

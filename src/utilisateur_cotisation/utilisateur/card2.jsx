@@ -25,10 +25,10 @@ class Card2 extends React.Component{
       }
     }
     return(
-          <div className="container  px-5  my-3">
-              <div className="row row-cols-1 row-cols-md-3 ps-5 pe-5">
-                      <div className="col">
-                        <div className="card bg-success text-white shadow">
+          <div className="container  px-5  mt-md-5 mt-0 pt-md-5 pt-2">
+              <div className="row d-flex justify-content-between  gy-3  ">
+                      <div className="col-12 col-md-6 col-lg-4  d-flex justify-content-center">
+                        <div className="card bg-success text-white shadow col-12">
                           <div className="card-body">
                             <p className="card-title">Membre actif <i className="bi bi-circle-fill"></i></p>
                             <h5>
@@ -39,8 +39,8 @@ class Card2 extends React.Component{
                           </div>
                         </div>
                       </div>
-                      <div className="col">
-                        <div className="card shadow">
+                      <div className="col-12 col-md-6 col-lg-4  d-flex justify-content-center">
+                        <div className="card shadow col-12">
                           <div className="card-body">
                            <p className="card-title">Membre Bloqué <i className="bi bi-ban text-danger"></i></p>
                             <h5>
@@ -51,8 +51,8 @@ class Card2 extends React.Component{
                           </div>
                         </div>
                       </div>
-                      <div className="col">
-                        <div className="card shadow">
+                      <div className="col-12 col-md-6 col-lg-4  d-flex justify-content-center">
+                        <div className="card shadow col-12">
                           <div className="card-body">
                             <p className="card-title">Total Effectif</p>
                             <h5>
@@ -71,3 +71,6 @@ class Card2 extends React.Component{
 
 }
 export default Card2
+
+
+

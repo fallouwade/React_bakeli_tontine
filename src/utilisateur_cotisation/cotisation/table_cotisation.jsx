@@ -38,26 +38,13 @@ class Table extends React.Component{
   }
 
   render(){
-    const style={
-      card:{
-       lineHeight: '1'
-      },
-      card1:{
-       height:'5px' 
-      },
-      card2:{
-        width: "20%",
-       
-      },
-      taille:{
-        height: '14vh'
-      }
-    }
-    const {table}= this.state
+   
+     const { table, isModalOpen, currentUser } = this.state;
+     console.log(table)
     return(
-          <div className="container  px-5  my-3">
-              <div class="container col-11 mt-3 ">
-                    <table class="table ms-1 shadow-sm col-12 " id="table">
+          <div className="container-fluid  row px-sm-0 px-md-0 px-0 mt-4">
+              <div class="ms-md-3 ms-3">
+                    <table class="table shadow-sm col-12 rounded-5 " id="table1">
                          <thead class="rounded-1 " >
                             <tr class="table-success">
                               
@@ -94,6 +81,10 @@ class Table extends React.Component{
                           </tbody>
                     </table>
                 </div>
+                <Modal isOpen={isModalOpen} onClose={this.closeModal} currentUser={currentUser}>
+
+         
+               </Modal>
           </div>
 
       )

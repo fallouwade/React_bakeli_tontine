@@ -1,3 +1,6 @@
+
+
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Aside from '../../aside_nav/aside_nav.jsx'
@@ -8,7 +11,9 @@ import Ajouter from './modal_ajouter.jsx';
 import Table1 from './table_utili.jsx'
 
 
-class Utilisateur extends React.Component{
+
+
+class Accueil extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -17,24 +22,12 @@ class Utilisateur extends React.Component{
   }
 
   render(){
-     const zindex={
-      index1:{
-        zIndex:1000
-      },
-      index2:{
-        zIndex:'0'
-      },
-      marge:{
-        marginLeft:'24vw',
-        marginTop: '10%'
-      }
-
-    }
+   
     
     return(
 
-          <section >
-          
+          <section className="">
+              <div className="container-fluid">
             <div className="z-3" >
               <Aside/>
             </div>
@@ -42,8 +35,10 @@ class Utilisateur extends React.Component{
               <Nav name="Admin Dashboard"/>
 
             </div>
-            <div className=" col-sm-9 col-md-9 col-12 container-fluid border border-primary"  id="dashboard">
-              <div>
+            </div>
+           <section className="  ">
+             <div className="content"  id="dashboard">
+               <div>
                 <Card2 />
               </div>
               <div>
@@ -52,9 +47,13 @@ class Utilisateur extends React.Component{
               <div>
                 <Table1 />
               </div>
-            </div>
+             </div>
+
+           </section>
 
           </section>
+
+
       )
   }
 }
@@ -62,4 +61,4 @@ class Utilisateur extends React.Component{
 
 
 
-export default Utilisateur
+export default Accueil

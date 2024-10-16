@@ -8,6 +8,10 @@ import Table from './table_cotisation.jsx'
 import Modal from './modal_cotisation.jsx'
 
 
+
+
+
+
 class Cotisation extends React.Component{
   constructor(props){
     super(props);
@@ -17,24 +21,12 @@ class Cotisation extends React.Component{
   }
 
   render(){
-     const zindex={
-      index1:{
-        zIndex:1000
-      },
-      index2:{
-        zIndex:'0'
-      },
-      marge:{
-        marginLeft:'24vw',
-        marginTop: '10%'
-      }
-
-    }
+   
     
     return(
 
-          <section >
-          
+          <section className="">
+              <div className="container-fluid">
             <div className="z-3" >
               <Aside/>
             </div>
@@ -42,8 +34,10 @@ class Cotisation extends React.Component{
               <Nav name="Admin Dashboard"/>
 
             </div>
-            <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
-              <div>
+            </div>
+           <section className="  ">
+             <div className="content "  id="dashboard">
+               <div className="mt-md-5 mt-0 pt-md-5 pt-0">
                 <Modal/>
               </div>
                <div> 
@@ -52,11 +46,13 @@ class Cotisation extends React.Component{
                <div>
                  <Table />
               </div>
-
              </div>
-            
+
+           </section>
 
           </section>
+
+
       )
   }
 }

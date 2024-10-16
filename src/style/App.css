@@ -44,7 +44,9 @@
     margin-left: 24vw !important;
     margin-top: 2% !important;
    border: 1px solid yellow;
+     width: 75%;
 }
+
 
 
 @media (max-width: 768px) {
@@ -55,7 +57,12 @@
   #dashboard{
     margin-left: 0%  !important;
      margin-top: 2% !important;
+      width: 100%;
   }
+  .cotisation th{
+        font-size: 10px !important;
+  }
+  
 }
 @media (max-width: 668px) {
   /* Styles pour les écrans de 768px ou moins */
@@ -66,6 +73,11 @@
     margin-left: 0%  !important;
      margin-top: 25% !important;
   }
+  #table1 th, td, button{
+    font-size: 11px;
+
+  }
+
 }
 
   

@@ -16,24 +16,12 @@ class Generaux extends React.Component{
   }
 
   render(){
-     const zindex={
-      index1:{
-        zIndex:1000
-      },
-      index2:{
-        zIndex:'0'
-      },
-      marge:{
-        marginLeft:'24vw',
-        marginTop: '10%'
-      }
-
-    }
+    
     
     return(
 
           <section >
-          
+            <div className="container-fluid">
             <div className="z-3" >
               <Aside/>
             </div>
@@ -41,7 +29,9 @@ class Generaux extends React.Component{
               <Nav name="Admin Dashboard"/>
 
             </div>
-            <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
+            </div>
+
+            <div className="content "  id="dashboard">
           
 
             <div>

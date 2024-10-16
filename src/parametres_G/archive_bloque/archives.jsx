@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Aside from './aside_nav.jsx'
-import Nav from './nav.jsx'
-import './index.css'
+import Aside from '../../aside_nav/aside_nav.jsx'
+import Nav from '../../aside_nav/nav.jsx'
+import '../../style/App.css'
 
 
 
@@ -41,7 +41,7 @@ class Archives extends React.Component{
               <Nav name="Admin Dashboard"/>
 
             </div>
-            <div className="col-lg-6 col-12  border border-primary" style={zindex.marge} id="dashboard">
+            <div className="content ms-md-0 ms-3 "  id="dashboard">
             <h2 className="ps-4">10 Membres Archivés </h2>
             <div>
                <div id="archives" class="section2">

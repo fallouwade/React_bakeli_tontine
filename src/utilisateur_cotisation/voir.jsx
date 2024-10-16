@@ -41,7 +41,7 @@ class Modal extends React.Component {
     console.log(modal)
 
     return (
-      <div className="modal fade show" style={{ display: 'block' }} onClick={onClose}>
+      <div className="modal fade show container"  style={{ display: 'block' }} onClick={onClose}>
         <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
           <div className="modal-content">
             <div className="modal-header bg-success">
@@ -55,7 +55,7 @@ class Modal extends React.Component {
                   </h5>
                   <p>Designer</p>
                 </div>
-                <table className="table ms-1 shadow-sm col-12" id="table">
+                <table className="table ms-1 shadow-sm " id="table">
                   <thead className="rounded-1">
                     <tr className="table-dark gx-3 text-center">
                       <th scope="col">Mois</th>

@@ -13,21 +13,7 @@ class Profil_generau extends React.Component{
   }
 
   render(){
-    const style={
-      card:{
-       lineHeight: '1'
-      },
-      card1:{
-       height:'5px' 
-      },
-      card2:{
-        width: "20%",
-       
-      },
-      taille:{
-        height: '14vh'
-      }
-    }
+    
     return(
           <div className="container-fluid px-md-5 px-0  my-3">
 

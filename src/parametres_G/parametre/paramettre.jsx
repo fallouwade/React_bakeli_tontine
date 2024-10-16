@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Aside from '../../aside_nav/aside_nav.jsx'
 import Nav from '../../aside_nav/nav.jsx'
-import '../../style//index.css'
+import '../../style/index.css'
 import Profil from './profil.jsx'
 
 
@@ -16,24 +16,12 @@ class Paramettre extends React.Component{
   }
 
   render(){
-     const zindex={
-      index1:{
-        zIndex:1000
-      },
-      index2:{
-        zIndex:'0'
-      },
-      marge:{
-        marginLeft:'24vw',
-        marginTop: '10%'
-      }
-
-    }
+     
     
     return(
 
           <section >
-          
+            <div className="container-fluid">
             <div className="z-3" >
               <Aside/>
             </div>
@@ -41,11 +29,14 @@ class Paramettre extends React.Component{
               <Nav name="Admin Dashboard"/>
 
             </div>
-            <div className="col-lg-9 col-12  border border-primary" style={zindex.marge} id="dashboard">
-            <div>
-                <Profil />
             </div>
-             
+
+            <div className="content "  id="dashboard">
+          
+
+            <div>
+              <Profil/>
+            </div>
             </div>
 
           </section>

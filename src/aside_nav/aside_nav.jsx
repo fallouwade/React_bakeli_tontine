@@ -7,6 +7,7 @@ import image3 from '../../image/user.png';
 import image4 from '../../image/Vector.png';
 import image6 from '../../image/healthicons_money-bag-outline.png';
 import '../style/index.css';
+import { Link } from 'react-router-dom';
 
 class Aside extends React.Component {
   constructor(props) {
@@ -90,34 +91,34 @@ class Aside extends React.Component {
                   </h4>
                 </li>
                 <li className="p-md-4 p-2">
-                  <a href="/accueil" className="fs-5 fw-semibold text-decoration-none text-white">
+                  <Link to="/accueil" className="fs-5 fw-semibold text-decoration-none text-white">
                     <img src={image2} alt="" className="pe-3" />
                     Accueil
-                  </a>
+                  </Link>
                 </li>
                 <li className="ps-md-4 ps-2 pb-md-3 pb-4 pt-md-2 pt-3">
-                  <a
-                    href="/utilisateur/"
+                  <Link
+                    to="/utilisateur/"
                     className="fs-5 fw-semibold text-decoration-none text-white"
                    
                   >
                     <img src={image3} alt="" className="pe-3" />
                     Utilisateurs
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-md-3 p-1">
-                  <a
-                    href="/cotisation/"
+                  <Link
+                    to="/cotisation/"
                     className="fs-5 fw-semibold text-decoration-none text-white"
                    
                   >
                     <img src={image6} alt="" className="pe-3" />
                     Cotisations
-                  </a>
+                  </Link>
                 </li>
                 <li className="ps-md-4 ps-2 pt-3">
-                  <a
-                    href="/paramettre/"
+                  <Link
+                    to="/paramettre/"
                     className="fs-5 fw-semibold text-decoration-none text-white"
                    
                   >
@@ -130,28 +131,28 @@ class Aside extends React.Component {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                       <a  href="/paramettre/" className="text-decoration-none text-white"> Parametres </a>
+                       <Link to="/paramettre/" className="text-decoration-none text-white"> Parametres </Link>
                       </button>
                       <ul className="dropdown-menu g-0 text-white dropdown-menu-end dropdown-menu-lg-end border border-0" style={{ backgroundColor: '#093545' }}>
                         <li>
                           <button className="dropdown-item text-white m-0 p-0 fs-6 p-2"  type="button">
-                          <a className="text-decoration-none text-white" href="/parametre/paramettre_generaux/">Parametre generaux</a></button>
+                          <Link className="text-decoration-none text-white" to="/parametre/paramettre_generaux/">Parametre generaux</Link></button>
                         </li>
                         <li>
                           <button className="dropdown-item text-white m-0 p-2 fs-6"  type="button">
-                          <a className="text-decoration-none text-white" href="/parametre/paramettre_utili/">Utilisateurs</a></button>
+                          <to className="text-decoration-none text-white" to="/parametre/paramettre_utili/">Utilisateurs</to></button>
                         </li>
                         <li>
                           <button className="dropdown-item text-white m-0 p-2 fs-6"  type="button">
-                          <a  href="/parametre/archive/" className="text-decoration-none text-white">Archives</a></button>
+                          <Link to="/parametre/archive/" className="text-decoration-none text-white">Archives</Link></button>
                         </li>
                         <li>
                           <button className="dropdown-item text-white m-0 p-2 fs-6" type="button">
-                          <a  href="/paramettre_bloque/" className="text-white text-decoration-none">Membres Bloques</a></button>
+                          <Link to="/paramettre_bloque/" className="text-white text-decoration-none">Membres Bloques</Link></button>
                         </li>
                       </ul>
                     </div>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

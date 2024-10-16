@@ -13,21 +13,7 @@ class Utilisateur_p extends React.Component{
   }
 
   render(){
-    const style={
-      card:{
-       lineHeight: '1'
-      },
-      card1:{
-       height:'5px' 
-      },
-      card2:{
-        width: "20%",
-       
-      },
-      taille:{
-        height: '14vh'
-      }
-    }
+    
     return(
           <div className="container-fluid    my-3">
              <div id="utilisateur2" className="section2  bg-light">
